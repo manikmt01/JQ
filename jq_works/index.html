@@ -1,0 +1,402 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>jQuery UI Draggable - Default functionality</title>
+  <link rel="stylesheet" href="css/jquery-ui.min.css">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/main.css">
+  <style>
+  </style>
+  
+  
+</head>
+<body>
+  <div class="container">
+<!-- Dialog start -->
+<h4>Dialog</h4><br>
+<div id="dialog" title="Basic Dialog">
+  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Incidunt, quas.</p>
+</div>
+
+<hr>
+<!-- Dialog end -->
+  
+  <!-- img control start -->
+  <h2>Image Control</h2><br>
+  <h4>Control Image Height</h4>
+  <div id="imgHeight"></div><br>
+  <h4>Control Image Width</h4>
+  <div id="imgWidth"></div><br>
+  <h4>Control Image Opacity</h4>
+  <div id="imgOpacity"></div><br>
+
+  <div id="state"></div><br>
+
+  <img src="img/one.jpg" alt="One" id="liveimg" style="width: 200px; height: 200px;"><br><br>
+  <!-- img control end -->
+  <!-- Draggable start -->
+  <hr>
+  <h4>Draggable</h4><br>
+  <div id="draggable">
+    Test Draggable Widget.
+  </div>
+<hr>
+<!-- Draggable end -->
+
+
+<!-- Droppable start -->
+  <h4>Droppable</h4><br>
+  <div id="draggable1" class="ui-widget-content">
+    <p>I revert when I'm Dropeed</p>
+  </div>
+  <div id="draggable2" class="ui-widget-content">
+    <p>I revert when I'm not Dropeed</p>
+  </div>
+  <div id="draggable3" class="ui-widget-header">
+    <p>Drop me here</p>
+  </div>
+
+  <div class="clearfix"></div>
+  <hr>
+<!-- Droppable end -->
+
+<!-- Resizable start -->
+<h4>Resizable</h4><br>
+<div id="resizable" class="ui-widget-content" style="overflow: hidden;">
+  <h3 class="ui-widget-header">Helper</h3>
+</div>
+<hr>
+<!-- Resizable end -->
+<!-- Selectable start -->
+<h4>Selectable</h4>
+  <ol id="selectable">
+    <li class="ui-widget-content">Item 1</li>
+    <li class="ui-widget-content">Item 2</li>
+    <li class="ui-widget-content">Item 3</li>
+    <li class="ui-widget-content">Item 4</li>
+    <li class="ui-widget-content">Item 5</li>
+    <li class="ui-widget-content">Item 6</li>
+    <li class="ui-widget-content">Item 7</li>
+    <li class="ui-widget-content">Item 8</li>
+  </ol>
+  <hr>
+<!-- Selectable end -->
+<!-- sortable start -->
+
+<h4>Sortable</h4>
+<ul id="sortable">
+  <li class="ui-state-default">1</li>
+  <li class="ui-state-default">2</li>
+  <li class="ui-state-default">3</li>
+  <li class="ui-state-default">4</li>
+  <li class="ui-state-default">5</li>
+  <li class="ui-state-default">6</li>
+  <li class="ui-state-default">7</li>
+  <li class="ui-state-default">8</li>
+  <li class="ui-state-default">9</li>
+  <li class="ui-state-default">10</li>
+  <li class="ui-state-default">11</li>
+  <li class="ui-state-default">12</li>
+</ul>
+
+<hr>
+<!-- sortable end -->
+<!-- accordion start -->
+<h4>Accordion</h4><br>
+  <div id="accordion">
+    <h3>section 1</h3>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae debitis repudiandae, aliquam beatae harum blanditiis quaerat ratione ad facere sequi quas consectetur dolores, voluptatum animi est, quo delectus et amet aperiam. Provident porro iste dignissimos quas dolore, modi, alias ad?</p>
+    <h3>section 2</h3>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae debitis repudiandae, aliquam beatae harum blanditiis quaerat ratione ad facere sequi quas consectetur dolores, voluptatum animi est, quo delectus et amet aperiam. Provident porro iste dignissimos quas dolore, modi, alias ad?</p>
+    <h3>section 3</h3>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae debitis repudiandae, aliquam beatae harum blanditiis quaerat ratione ad facere sequi quas consectetur dolores, voluptatum animi est, quo delectus et amet aperiam. Provident porro iste dignissimos quas dolore, modi, alias ad?</p>
+    <h3>section 4</h3>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae debitis repudiandae, aliquam beatae harum blanditiis quaerat ratione ad facere sequi quas consectetur dolores, voluptatum animi est, quo delectus et amet aperiam. Provident porro iste dignissimos quas dolore, modi, alias ad?</p>
+  </div>
+  <hr>
+<!-- accordion end -->
+<!-- Auto Complete start-->
+<h4>Search Your Name </h4>
+<div class="ui-widget">
+  <label for="tags">Tags:</label>
+  <input type="text" id="tags">
+</div>
+<hr>
+<!-- Auto Complete  end-->
+<!-- checkbox radio start-->
+<div class="widget">
+ 
+  <h2>Radio Group</h2>
+  <fieldset>
+    <legend>Select a Location: </legend>
+    <label for="radio-1">New York</label>
+    <input type="radio" name="radio-1" id="radio-1">
+    <label for="radio-2">Paris</label>
+    <input type="radio" name="radio-1" id="radio-2">
+    <label for="radio-3">London</label>
+    <input type="radio" name="radio-1" id="radio-3">
+  </fieldset>
+</div>
+<hr>
+<!-- checkbox radio end-->
+
+<!-- date picker start -->
+<h4>Date Picker</h4><br>
+<p>Date: <input type="text" id="datepicker"></p>
+
+<hr>
+<!-- date picker end -->
+<!-- manu start -->
+<h4>Manu item </h4>
+<ul id="menu">
+  <li>PHP
+    <ul>
+      <li>more item 
+          <ul>
+      <li>itme 2</li>
+      <li>itme 3</li>
+      <li>itme 4</li>
+      <li>itme 5</li>
+      <li>itme 6</li>
+    </ul>
+      </li>
+      <li>itme 2</li>
+      <li>itme 3</li>
+      <li>itme 4</li>
+      <li>itme 5</li>
+      <li>itme 6</li>
+    </ul>
+  </li>
+  <li>JAVA
+    <ul>
+      <li>itme 1</li>
+      <li>itme 2</li>
+      <li>itme 3</li>
+      <li>itme 4</li>
+      <li>itme 5</li>
+      <li>itme 6</li>
+    </ul>
+  </li>
+  <li>C++
+    <ul>
+      <li>itme 1</li>
+      <li>itme 2</li>
+      <li>itme 3</li>
+      <li>itme 4</li>
+      <li>itme 5</li>
+      <li>itme 6</li>
+    </ul>
+  </li>
+</ul>
+<hr>
+<!-- manu end -->
+<!-- tabs start -->
+<h4>Tabs</h4> <br>
+<div id="tabs">
+  <ul>
+    <li><a href="#tabs-1">Nunc tincidunt</a></li>
+    <li><a href="#tabs-2">Proin dolor</a></li>
+    <li><a href="#tabs-3">Aenean lacinia</a></li>
+  </ul>
+  <div id="tabs-1">
+    <p>Proin elit arcu, rutrum commodo, vehicula tempus, commodo a, risus. Curabitur nec arcu. Donec sollicitudin mi sit amet mauris. Nam elementum quam ullamcorper ante. Etiam aliquet massa et lorem. Mauris dapibus lacus auctor risus. Aenean tempor ullamcorper leo. Vivamus sed magna quis ligula eleifend adipiscing. Duis orci. Aliquam sodales tortor vitae ipsum. Aliquam nulla. Duis aliquam molestie erat. Ut et mauris vel pede varius sollicitudin. Sed ut dolor nec orci tincidunt interdum. Phasellus ipsum. Nunc tristique tempus lectus.</p>
+  </div>
+  <div id="tabs-2">
+    <p>Morbi tincidunt, dui sit amet facilisis feugiat, odio metus gravida ante, ut pharetra massa metus id nunc. Duis scelerisque molestie turpis. Sed fringilla, massa eget luctus malesuada, metus eros molestie lectus, ut tempus eros massa ut dolor. Aenean aliquet fringilla sem. Suspendisse sed ligula in ligula suscipit aliquam. Praesent in eros vestibulum mi adipiscing adipiscing. Morbi facilisis. Curabitur ornare consequat nunc. Aenean vel metus. Ut posuere viverra nulla. Aliquam erat volutpat. Pellentesque convallis. Maecenas feugiat, tellus pellentesque pretium posuere, felis lorem euismod felis, eu ornare leo nisi vel felis. Mauris consectetur tortor et purus.</p>
+  </div>
+  <div id="tabs-3">
+    <p>Mauris eleifend est et turpis. Duis id erat. Suspendisse potenti. Aliquam vulputate, pede vel vehicula accumsan, mi neque rutrum erat, eu congue orci lorem eget lorem. Vestibulum non ante. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Fusce sodales. Quisque eu urna vel enim commodo pellentesque. Praesent eu risus hendrerit ligula tempus pretium. Curabitur lorem enim, pretium nec, feugiat nec, luctus a, lacus.</p>
+    <p>Duis cursus. Maecenas ligula eros, blandit nec, pharetra at, semper at, magna. Nullam ac lacus. Nulla facilisi. Praesent viverra justo vitae neque. Praesent blandit adipiscing velit. Suspendisse potenti. Donec mattis, pede vel pharetra blandit, magna ligula faucibus eros, id euismod lacus dolor eget odio. Nam scelerisque. Donec non libero sed nulla mattis commodo. Ut sagittis. Donec nisi lectus, feugiat porttitor, tempor ac, tempor vitae, pede. Aenean vehicula velit eu tellus interdum rutrum. Maecenas commodo. Pellentesque nec elit. Fusce in lacus. Vivamus a libero vitae lectus hendrerit hendrerit.</p>
+  </div>
+</div>
+<hr>
+<!-- tabs end -->
+
+<!-- toggle class start -->
+<h4>Toggler start</h4><br>
+<div class="toggler">
+  <div id="effect" class="newClass ui-corner-all">
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Placeat, doloribus.
+  </div>
+</div>
+ 
+<button id="button" class="ui-state-default ui-corner-all">Run Effect</button>
+<hr>
+<!-- toggle class end -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</div>
+<!-- container end -->
+  <script src="js/jquery.js"></script>
+  <script src="js/jquery-ui.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/main.js"></script>
+  <script>
+
+
+    $(document).ready(function () {
+          // img control start
+          $("#imgHeight,#imgWidth").slider({
+            min: 200, max: 1000, slide: controlImg
+          });
+          $("#imgOpacity").slider({
+            min:0, max:100, value:100,slide: controlImg
+          });
+          function controlImg(){
+            var height = $("#imgHeight").slider("value");
+            var width = $("#imgWidth").slider("value");
+            var opacity = $("#imgOpacity").slider("value");
+            $("#liveimg").css({
+              height:height, width:width, opacity:opacity/100
+            });
+            $("#state").html("Height: "+height+ " px <br>"+ "Width: "+width+" px <br>"+"Opacity: "+opacity/100);
+          }
+            // img control end
+            // draggable start
+            $(document).ready(function () {
+              $("#draggable").draggable({
+                revert: true 
+              });
+            });
+            // draggable end
+             // droppable start
+
+$( "#draggable1" ).draggable({ revert: "valid" });
+    $( "#draggable2" ).draggable({ revert: "invalid" });
+ 
+    $( "#draggable3" ).droppable({
+      classes: {
+        "ui-droppable-active": "ui-state-active",
+        "ui-droppable-hover": "ui-state-hover"
+      },
+      drop: function( event, ui ) {
+        $( this )
+          .addClass( "ui-state-highlight" )
+          .find( "p" )
+            .html( "Dropped!" );
+      }
+    });
+    // droppable end
+    // resizable start
+    $("#resizable").resizable({
+      helper: "ui-resizable-helper"
+    });
+    // resizable end
+    // selectable start
+      $("#selectable").selectable();
+    // selectable end
+    // sortable start
+    $("#sortable").sortable();
+    $("#sortable").disableSelection();
+    // sortable end
+    // accordion start
+    $("#accordion").accordion();
+    // accordion end
+    // Auto Complete start
+      var availableTags =[
+      "Minhaz Faisal",
+      "Manik MT",
+      "Zahid Shad",
+      "Farid Rony",
+      "M M Aminur Jibon",
+      "Jafrana Bin Ahmed",
+      "Md Mizanur Rahaman Mizan",
+      "Hosan Ara Kolly",
+      "Rafi Shah",
+      "Shoshe Islam",
+      "Arif Emamul",
+      "SU Shagor",
+      "Iqramul Tusher",
+      "Imam Hossain",
+      "Fatema Priya",
+      "Sapon Miah",
+      "Md Parvez Habib",
+      "Mehedi Hasan Mithun",
+      "Tasmia Chodhury",
+      "Shourav Bhowmic",
+      "Raiyan Ahamed Anas",
+      "Saurab Sam",
+      "M.d Waliullah Rahat",
+      "Rakibul Islam",
+      "Saiful Islam",
+      "S M Zeeshan Siddiqui",
+      "Tania Haque Ratry"
+
+      ];
+      $("#tags").autocomplete({
+        source: availableTags
+      });
+    // Auto Complete end
+    // checkbox radio start
+     $( "input[type='radio']" ).checkboxradio();
+    $( "fieldset" ).controlgroup();
+    // checkbox radio end
+    // date picker start
+      $("#datepicker").datepicker({
+        minDate: -20,
+        maxDate: "+1M + 10D"
+      });
+    // date picker end
+    // Dialog start
+    $("#dialog").dialog();
+    // Dialog end
+    // manu start
+    $("#menu").menu();
+    // manu end
+
+    // Tabs start
+    $( "#tabs" ).tabs();
+    // Tabs end
+
+
+$( "#button" ).on( "click", function() {
+      $( "#effect" ).toggleClass( "newClass", 1000 );
+    });
+
+
+
+
+
+
+
+
+
+
+
+
+          });
+        </script>
+      </body>
+      </html>
